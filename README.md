@@ -1,6 +1,6 @@
 # FakeMobileAnalytics
 
-[![CI Status](https://img.shields.io/travis/v7lin@qq.com/FakeMobileAnalytics.svg?style=flat)](https://travis-ci.org/v7lin@qq.com/FakeMobileAnalytics)
+[![CI Status](https://img.shields.io/travis/v7lin/FakeMobileAnalytics.svg?style=flat)](https://travis-ci.org/v7lin/FakeMobileAnalytics)
 [![Version](https://img.shields.io/cocoapods/v/FakeMobileAnalytics.svg?style=flat)](https://cocoapods.org/pods/FakeMobileAnalytics)
 [![License](https://img.shields.io/cocoapods/l/FakeMobileAnalytics.svg?style=flat)](https://cocoapods.org/pods/FakeMobileAnalytics)
 [![Platform](https://img.shields.io/cocoapods/p/FakeMobileAnalytics.svg?style=flat)](https://cocoapods.org/pods/FakeMobileAnalytics)
@@ -22,7 +22,7 @@ pod 'FakeMobileAnalytics'
 
 ## Author
 
-v7lin@qq.com, v7lin@qq.com
+v7lin, v7lin@qq.com
 
 ## License
 

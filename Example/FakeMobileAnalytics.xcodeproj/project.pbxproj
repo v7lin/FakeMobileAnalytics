@@ -58,15 +58,15 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		68458F9E854AB2CD0B886D0F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		68458F9E854AB2CD0B886D0F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A8CC7A95F42C608A2227C677 /* FakeMobileAnalytics.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = FakeMobileAnalytics.podspec; path = ../FakeMobileAnalytics.podspec; sourceTree = "<group>"; };
+		A8CC7A95F42C608A2227C677 /* FakeMobileAnalytics.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FakeMobileAnalytics.podspec; path = ../FakeMobileAnalytics.podspec; sourceTree = "<group>"; };
 		AAD222771686C8484E455B1F /* Pods-FakeMobileAnalytics_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FakeMobileAnalytics_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-FakeMobileAnalytics_Example/Pods-FakeMobileAnalytics_Example.release.xcconfig"; sourceTree = "<group>"; };
 		ABFFE22F6A14183A069128DE /* Pods-FakeMobileAnalytics_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FakeMobileAnalytics_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FakeMobileAnalytics_Example/Pods-FakeMobileAnalytics_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		CCE83F1178A777F2A316010E /* Pods_FakeMobileAnalytics_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FakeMobileAnalytics_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC82FBAB6BE664893679BED /* Pods-FakeMobileAnalytics_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FakeMobileAnalytics_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FakeMobileAnalytics_Tests/Pods-FakeMobileAnalytics_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F9282968DCBDC015E400CE25 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F9282968DCBDC015E400CE25 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,7 +248,11 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "v7lin@qq.com";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 78W43A3TE2;
+					};
 					6003F5AD195388D20070C39A = {
+						DevelopmentTeam = 78W43A3TE2;
 						TestTargetID = 6003F589195388D20070C39A;
 					};
 				};
@@ -522,6 +526,7 @@
 			baseConfigurationReference = ABFFE22F6A14183A069128DE /* Pods-FakeMobileAnalytics_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 78W43A3TE2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FakeMobileAnalytics/FakeMobileAnalytics-Prefix.pch";
 				INFOPLIST_FILE = "FakeMobileAnalytics/FakeMobileAnalytics-Info.plist";
@@ -537,6 +542,7 @@
 			baseConfigurationReference = AAD222771686C8484E455B1F /* Pods-FakeMobileAnalytics_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 78W43A3TE2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FakeMobileAnalytics/FakeMobileAnalytics-Prefix.pch";
 				INFOPLIST_FILE = "FakeMobileAnalytics/FakeMobileAnalytics-Info.plist";
@@ -552,6 +558,7 @@
 			baseConfigurationReference = 31138D05D41796E65406870B /* Pods-FakeMobileAnalytics_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 78W43A3TE2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -576,6 +583,7 @@
 			baseConfigurationReference = EDC82FBAB6BE664893679BED /* Pods-FakeMobileAnalytics_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 78W43A3TE2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
