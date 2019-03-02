@@ -1,0 +1,14 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'FakeMobileAnalytics_Example' do
+  pod 'FakeMobileAnalytics', :path => '../'
+
+  target 'FakeMobileAnalytics_Tests' do
+    inherit! :search_paths
+
+    pod 'Specta'
+    pod 'Expecta'
+  end
+end
