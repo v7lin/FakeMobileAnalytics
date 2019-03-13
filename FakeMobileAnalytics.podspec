@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'FakeMobileAnalytics'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of FakeMobileAnalytics.'
+  s.summary          = 'FakeMobileAnalytics'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+FakeMobileAnalytics for CocoaPods
                        DESC
 
   s.homepage         = 'https://github.com/v7lin/FakeMobileAnalytics'
@@ -31,7 +31,7 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'FakeMobileAnalytics/Classes/**/*'
-  
+
   # s.resource_bundles = {
   #   'FakeMobileAnalytics' => ['FakeMobileAnalytics/Assets/*.png']
   # }
@@ -39,15 +39,28 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
-  
+
+  s.static_framework = true
   s.default_subspecs = 'Baidu'
-  
+
+  # s.subspec 'Vendor' do |sp|
+  #     sp.source_files = 'FakeMobileAnalytics/Classes/**/*'
+  # end
+
   s.subspec 'Baidu' do |sp|
+      # sp.dependency 'FakeMobileAnalytics/Vendor'
+
+      sp.source_files = 'FakeMobileAnalytics/Vendor/Baidu/**/*'
+      sp.prefix_header_contents = '#import "FakeMobileAnalytics+Baidu.h"'
       sp.dependency 'BaiduMobStat', '~> 4.8.3'
   end
-  
+
   s.subspec 'Talkingdata' do |sp|
-      sp.dependency 'BaiduMobStat', '~> 4.8.3'
+      # sp.dependency 'FakeMobileAnalytics/Vendor'
+
+      sp.source_files = 'FakeMobileAnalytics/Vendor/Talkingdata/**/*'
+      sp.prefix_header_contents = '#import "FakeMobileAnalytics+Talkingdata.h"'
+      sp.dependency 'FakeTalkingdataAnalytics', '~> 4.0.21'
   end
-  
+
 end
