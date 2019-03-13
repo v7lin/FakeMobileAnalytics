@@ -52,7 +52,7 @@ FakeMobileAnalytics for CocoaPods
 
       sp.source_files = 'FakeMobileAnalytics/Vendor/Baidu/**/*'
       sp.prefix_header_contents = '#import "FakeMobileAnalytics+Baidu.h"'
-      sp.dependency 'BaiduMobStat', '~> 4.8.3'
+      sp.dependency 'BaiduMobStat', '~> 4.9.1'
   end
 
   s.subspec 'Talkingdata' do |sp|

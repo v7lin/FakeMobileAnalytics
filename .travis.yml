@@ -23,7 +23,9 @@ jobs:
   include:
   - stage: check
     script:
-    - pod lib lint
+    - pod lib lint --subspec=Vendor
+    - pod lib lint --subspec=Baidu
+    - pod lib lint --subspec=Talkingdata
   - stage: test
     script:
     - travis_retry set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/FakeMobileAnalytics.xcworkspace -scheme FakeMobileAnalytics-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
