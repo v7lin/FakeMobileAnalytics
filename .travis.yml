@@ -23,7 +23,7 @@ jobs:
   include:
   - stage: check
     script:
-    - pod lib lint
+    - pod lib lint --no-clean
   - stage: test
     script:
     - travis_retry set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/FakeMobileAnalytics.xcworkspace -scheme FakeMobileAnalytics-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
