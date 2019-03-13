@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface FakeMobileAnalytics (Baidu)
 
-+ (instancetype)shared;
++ (FakeMobileAnalytics *)shared;
 
 @end
 

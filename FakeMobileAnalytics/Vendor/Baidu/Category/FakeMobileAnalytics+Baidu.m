@@ -10,7 +10,7 @@
 
 @implementation FakeMobileAnalytics (Baidu)
 
-+ (instancetype)shared {
++ (FakeMobileAnalytics *)shared {
     static FakeMobileAnalytics * sharedInstance = nil;
     static dispatch_once_t predicate;
     dispatch_once(& predicate, ^{
