@@ -30,7 +30,7 @@ FakeMobileAnalytics for CocoaPods
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'FakeMobileAnalytics/Classes/**/*'
+  # s.source_files = 'FakeMobileAnalytics/Classes/**/*'
 
   # s.resource_bundles = {
   #   'FakeMobileAnalytics' => ['FakeMobileAnalytics/Assets/*.png']
@@ -43,12 +43,12 @@ FakeMobileAnalytics for CocoaPods
   s.static_framework = true
   s.default_subspecs = 'Baidu'
 
-  # s.subspec 'Vendor' do |sp|
-  #     sp.source_files = 'FakeMobileAnalytics/Classes/**/*'
-  # end
+  s.subspec 'Vendor' do |sp|
+      sp.source_files = 'FakeMobileAnalytics/Classes/**/*'
+  end
 
   s.subspec 'Baidu' do |sp|
-      # sp.dependency 'FakeMobileAnalytics/Vendor'
+      sp.dependency 'FakeMobileAnalytics/Vendor'
 
       sp.source_files = 'FakeMobileAnalytics/Vendor/Baidu/**/*'
       sp.prefix_header_contents = '#import "FakeMobileAnalytics+Baidu.h"'
@@ -56,7 +56,7 @@ FakeMobileAnalytics for CocoaPods
   end
 
   s.subspec 'Talkingdata' do |sp|
-      # sp.dependency 'FakeMobileAnalytics/Vendor'
+      sp.dependency 'FakeMobileAnalytics/Vendor'
 
       sp.source_files = 'FakeMobileAnalytics/Vendor/Talkingdata/**/*'
       sp.prefix_header_contents = '#import "FakeMobileAnalytics+Talkingdata.h"'
