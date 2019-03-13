@@ -17,7 +17,11 @@ FakeMobileAnalytics is available through [CocoaPods](https://cocoapods.org). To 
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'FakeMobileAnalytics'
+pod 'FakeMobileAnalytics/Baidu'
+```
+
+```ruby
+pod 'FakeMobileAnalytics/Talkingdata'
 ```
 
 ## Author
