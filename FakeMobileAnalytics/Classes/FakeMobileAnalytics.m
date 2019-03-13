@@ -25,15 +25,15 @@
     
 }
 
-- (void)trackEvent:(NSString *)eventId label:(NSString *)eventLabel {
+- (void)trackEvent:(NSString *)eventId eventLabel:(NSString *)eventLabel {
     
 }
 
-- (void)startEventTracking:(NSString *)eventId label:(NSString *)eventLabel {
+- (void)startEventTracking:(NSString *)eventId eventLabel:(NSString *)eventLabel {
     
 }
 
-- (void)stopEventTracking:(NSString *)eventId label:(NSString *)eventLabel {
+- (void)stopEventTracking:(NSString *)eventId eventLabel:(NSString *)eventLabel {
     
 }
 

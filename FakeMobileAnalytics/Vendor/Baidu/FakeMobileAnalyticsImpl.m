@@ -28,15 +28,15 @@
     // 百度移动统计不支持此功能
 }
 
-- (void)trackEvent:(NSString *)eventId label:(NSString *)eventLabel {
+- (void)trackEvent:(NSString *)eventId eventLabel:(NSString *)eventLabel {
     [[BaiduMobStat defaultStat] logEvent:eventId eventLabel:eventLabel];
 }
 
-- (void)startEventTracking:(NSString *)eventId label:(NSString *)eventLabel {
+- (void)startEventTracking:(NSString *)eventId eventLabel:(NSString *)eventLabel {
     [[BaiduMobStat defaultStat] eventStart:eventId eventLabel:eventLabel];
 }
 
-- (void)stopEventTracking:(NSString *)eventId label:(NSString *)eventLabel {
+- (void)stopEventTracking:(NSString *)eventId eventLabel:(NSString *)eventLabel {
     [[BaiduMobStat defaultStat] eventEnd:eventId eventLabel:eventLabel];
 }
 
