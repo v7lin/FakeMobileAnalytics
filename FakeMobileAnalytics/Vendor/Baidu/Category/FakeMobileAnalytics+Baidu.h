@@ -13,8 +13,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (FakeMobileAnalytics *)shared;
 
-+ (void)testLog;
-
 @end
 
 NS_ASSUME_NONNULL_END

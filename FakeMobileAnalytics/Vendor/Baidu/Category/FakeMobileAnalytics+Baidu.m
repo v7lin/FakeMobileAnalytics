@@ -19,8 +19,4 @@
     return sharedInstance;
 }
 
-+ (void)testLog {
-    NSLog(@"%@", @"xxx");
-}
-
 @end

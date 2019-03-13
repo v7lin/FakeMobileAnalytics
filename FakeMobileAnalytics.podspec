@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FakeMobileAnalytics'
-  s.version          = '0.0.4'
+  s.version          = '0.0.5'
   s.summary          = 'FakeMobileAnalytics'
 
 # This description is used to generate tags and improve search results.
@@ -51,6 +51,7 @@ FakeMobileAnalytics for CocoaPods
       sp.dependency 'FakeMobileAnalytics/Vendor'
 
       sp.source_files = 'FakeMobileAnalytics/Vendor/Baidu/**/*'
+      sp.private_header_files = 'FakeMobileAnalytics/Vendor/Baidu/**/*Impl.h'
       sp.prefix_header_contents = '#import "FakeMobileAnalytics+Baidu.h"'
       sp.dependency 'BaiduMobStat', '~> 4.9.1'
   end
@@ -59,6 +60,7 @@ FakeMobileAnalytics for CocoaPods
       sp.dependency 'FakeMobileAnalytics/Vendor'
 
       sp.source_files = 'FakeMobileAnalytics/Vendor/Talkingdata/**/*'
+      sp.private_header_files = 'FakeMobileAnalytics/Vendor/Talkingdata/**/*Impl.h'
       sp.prefix_header_contents = '#import "FakeMobileAnalytics+Talkingdata.h"'
       sp.dependency 'FakeTalkingdataAnalytics', '~> 4.0.21'
   end
